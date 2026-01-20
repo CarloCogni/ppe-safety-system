@@ -1,0 +1,19 @@
+# PPE Detection Streamlit App - Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core framework
+streamlit>=1.28.0
+
+# Image processing
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Machine Learning - Option A (Classification)
+tensorflow>=2.13.0
+
+# Machine Learning - Option B (Object Detection)
+ultralytics>=8.0.0  # YOLOv8
+
+# Visualization (if generating charts locally)
+matplotlib>=3.7.0
+seaborn>=0.12.0

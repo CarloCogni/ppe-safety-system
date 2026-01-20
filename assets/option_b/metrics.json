@@ -1,0 +1,49 @@
+{
+  "model": "YOLOv8-nano",
+  "task": "PPE Object Detection",
+  "classes": [
+    "helmet",
+    "head",
+    "vest"
+  ],
+  "class_descriptions": {
+    "helmet": "Worker wearing safety helmet (compliant)",
+    "head": "Worker NOT wearing helmet (violation)",
+    "vest": "Worker wearing high-visibility vest (compliant)"
+  },
+  "metrics": {
+    "mAP50": 0.9632266262242806,
+    "mAP50_95": 0.7150526965897387,
+    "per_class": {
+      "helmet": {
+        "precision": 0.9532511153901884,
+        "recall": 0.8808842652795839,
+        "AP50": 0.9569293282396965,
+        "F1": 0.915640052808746
+      },
+      "head": {
+        "precision": 0.9327890250759842,
+        "recall": 0.8814531548757171,
+        "AP50": 0.9471729278079041,
+        "F1": 0.9063947890447123
+      },
+      "vest": {
+        "precision": 0.9587759341769889,
+        "recall": 0.9678111587982833,
+        "AP50": 0.9855776226252413,
+        "F1": 0.963272359985283
+      }
+    }
+  },
+  "training_config": {
+    "epochs": 50,
+    "img_size": 640,
+    "batch_size": 16,
+    "optimizer": "AdamW",
+    "base_model": "yolov8n.pt (COCO pre-trained)"
+  },
+  "inference_config": {
+    "recommended_confidence": 0.25,
+    "note": "Lower threshold (0.25 vs 0.5) prioritizes recall for safety applications"
+  }
+}

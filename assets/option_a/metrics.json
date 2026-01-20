@@ -1,0 +1,47 @@
+{
+  "accuracy": 0.8634,
+  "macro_avg_f1": 0.863,
+  "total_samples": 2314,
+  "head": {
+    "precision": 0.8257,
+    "recall": 0.9213,
+    "f1_score": 0.8709,
+    "support": 1157
+  },
+  "helmet": {
+    "precision": 0.911,
+    "recall": 0.8055,
+    "f1_score": 0.855,
+    "support": 1157
+  },
+  "confidence": {
+    "mean_overall": 0.8356,
+    "mean_correct": 0.8584,
+    "mean_incorrect": 0.6914,
+    "high_confidence_count": 1492,
+    "calibration_gap": 0.167
+  },
+  "training": {
+    "final_train_accuracy": 0.85,
+    "final_val_accuracy": 0.8176,
+    "final_train_loss": 0.4422,
+    "final_val_loss": 0.4073,
+    "total_epochs": 16
+  },
+  "hard_negatives": {
+    "head_to_helmet": 9
+  },
+  "model_config": {
+    "architecture": "MobileNetV2",
+    "input_shape": [
+      320,
+      320,
+      3
+    ],
+    "num_classes": 2,
+    "class_weights": {
+      "head": 2.0,
+      "helmet": 1.0
+    }
+  }
+}

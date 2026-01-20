@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+
+# AI models
+#*.h5
+#*.pt
+
+*.zip
+
+# Streamlit
+.streamlit/secrets.toml
