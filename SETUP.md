@@ -79,3 +79,16 @@ test -f assets/option_b/best.pt && echo "✅ Option B model OK"
 ### Wrong metrics displayed
 - Delete placeholder `metrics.json` files before extracting
 - Ensure JSON syntax is valid: `python -m json.tool assets/option_a/metrics.json`
+
+---
+
+## 🧪 Running Tests
+
+After setup, verify everything works:
+```bash
+# Run test suite
+pytest
+
+# Run with coverage report
+pytest --cov=utils --cov-report=term-missing
+```

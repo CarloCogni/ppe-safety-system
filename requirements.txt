@@ -17,3 +17,7 @@ ultralytics>=8.0.0  # YOLOv8
 # Visualization (if generating charts locally)
 matplotlib>=3.7.0
 seaborn>=0.12.0
+
+# testing
+pytest>=9.0.2
+pytest-cov>=7.0.0

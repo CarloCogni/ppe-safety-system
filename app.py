@@ -246,6 +246,7 @@ def render_option_b_page():
             """)
 
 
+
 def main():
     """Main application entry point."""
     # Apply custom styling
@@ -263,6 +264,20 @@ def main():
     elif st.session_state.selected_option == 'B':
         render_option_b_page()
 
+    # Footer
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center; padding: 1rem 0; color: #8892b0; font-size: 0.85rem;">
+        <p>
+            <strong>Master's in Artificial Intelligence for Architecture & Construction</strong> program by <strong>
+                    Zigurat Global Institute of Technology</strong> — M3U3 Assignment
+            <br>
+            Made by <a href="https://github.com/CarloCogni" style="color: #e94560;">Carlo Cogni</a> |
+            <a href="https://github.com/CarloCogni/ppe-safety-system" style="color: #e94560;">GitHub</a> |
+            License: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" style="color: #e94560;">GPL-3.0</a>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()

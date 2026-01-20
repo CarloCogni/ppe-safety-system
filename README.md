@@ -187,6 +187,17 @@ OPTION_B_CONFIDENCE_THRESHOLD = 0.25  # Lower = safety-first (prioritize recall)
 | Access control | Option A | Binary decision, low latency |
 | Audit reporting | Option B | Full detection counts needed |
 
+
+---
+
+## 🔗 Links
+
+| Resource | URL                                                                                        |
+|----------|--------------------------------------------------------------------------------------------|
+| **Live Demo** | [ppe-safety-system.streamlit.app](https://YOUR-USERNAME-ppe-safety-system.streamlit.app)   |
+| **GitHub Repo** | [github.com/CarloCogni/ppe-safety-system](https://github.com/CarloCogni/ppe-safety-system) |
+
+
 ---
 
 ## 🎓 Academic Context
