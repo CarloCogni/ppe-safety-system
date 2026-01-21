@@ -36,7 +36,7 @@ def display_image_with_caption(image_path: str, caption: str = "", use_column_wi
     """
     if os.path.exists(image_path):
         img = Image.open(image_path)
-        st.image(img, caption=caption, use_container_width=use_column_width)
+        st.image(img, caption=caption, width="content")
     else:
         st.warning(f"Image not found: {os.path.basename(image_path)}")
 
